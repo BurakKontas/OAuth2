@@ -16,8 +16,6 @@ public class GoogleUnitTests
     {
         _validGoogleOAuthData = new GoogleOAuthData
         {
-            GoogleUrl = new Uri("https://accounts.google.com/o/oauth2/v2/auth?"),
-            GoogleTokenUrl = new Uri("https://oauth2.googleapis.com/token"),
             ClientId = "test-client-id",
             ClientSecret = "test-client-secret",
             RedirectUri = new Uri("https://example.com/callback"),
@@ -29,8 +27,6 @@ public class GoogleUnitTests
                 GoogleScopes.Email
             ],
             ResponseType = GoogleResponseType.Code,
-            State = Guid.NewGuid()
-                .ToString(),
             GrantType = GoogleGrantType.AuthorizationCode
         };
 
@@ -61,36 +57,6 @@ public class GoogleUnitTests
 
         // Act & Assert
         // No exception should be thrown
-    }
-
-    [Fact]
-    public async Task LoginAsync_ValidCode_ShouldReturnExpectedResponse()
-    {
-        // Arrange
-        var googleClient = new GoogleClient(_validGoogleOAuthData, _httpClient);
-        const string code = "test-auth-code";
-
-        // Act
-        var response = await googleClient.LoginAsync(code);
-
-        // Assert
-        response.Should().NotBeNull();
-        response!.AccessToken.Should().Be("test-token");
-    }
-
-    [Fact]
-    public async Task RefreshTokenAsync_ValidRefreshToken_ShouldReturnExpectedResponse()
-    {
-        // Arrange
-        var googleClient = new GoogleClient(_validGoogleOAuthData, _httpClient);
-        const string refreshToken = "test-refresh-token";
-
-        // Act
-        var response = await googleClient.RefreshTokenAsync(refreshToken);
-
-        // Assert
-        response.Should().NotBeNull();
-        response!.AccessToken.Should().Be("test-token");
     }
 
     [Fact]

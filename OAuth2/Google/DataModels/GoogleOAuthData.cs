@@ -17,7 +17,7 @@ namespace OAuth2.Google.DataModels
         /// This URL is used to start the OAuth 2.0 authorization process with Google.
         /// Ensure that any custom URL you provide is correctly formatted for Google OAuth 2.0.
         /// </remarks>
-        public required Uri GoogleUrl { get; set; } = new("https://accounts.google.com/o/oauth2/v2/auth?");
+        public Uri GoogleUrl { get; set; } = new("https://accounts.google.com/o/oauth2/v2/auth?");
 
         /// <summary>
         /// The URL endpoint used to exchange an authorization code or refresh token for an access token.
@@ -31,7 +31,7 @@ namespace OAuth2.Google.DataModels
         /// 
         /// Ensure that any custom URL you provide is correctly formatted for Google OAuth 2.0 token exchanges.
         /// </remarks>
-        public required Uri GoogleTokenUrl { get; set; } = new("https://oauth2.googleapis.com/token");
+        public Uri GoogleTokenUrl { get; set; } = new("https://oauth2.googleapis.com/token");
 
         /// <summary>
         /// The client ID obtained from Google API Console.
@@ -88,6 +88,6 @@ namespace OAuth2.Google.DataModels
         /// <remarks>
         /// Ensure that the state parameter is unique for each request to prevent CSRF attacks.
         /// </remarks>
-        public required string State { get; set; } = Guid.NewGuid().ToString();
+        public string State { get; set; } = Guid.NewGuid().ToString();
     }
 }
