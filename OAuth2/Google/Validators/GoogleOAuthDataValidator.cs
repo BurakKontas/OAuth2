@@ -10,7 +10,7 @@ public class GoogleOAuthDataValidator : AbstractValidator<GoogleOAuthData>
 {
     public GoogleOAuthDataValidator()
     {
-        RuleFor(x => x.GoogleUrl)
+        RuleFor(x => x.LoginUrl)
             .NotEmpty().WithMessage("Google URL cannot be empty.")
             .Must(uri => Uri.TryCreate(uri.ToString(), UriKind.Absolute, out _)).WithMessage("Invalid Google URL format.");
 

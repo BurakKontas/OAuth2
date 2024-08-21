@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using System.Text.Json;
 using FluentValidation;
+using OAuth2.Common.Interfaces;
 using OAuth2.Google.DataModels;
 using OAuth2.Google.Enums;
 using OAuth2.Google.Enums.Extensions;
@@ -51,7 +52,7 @@ public class GoogleClient : IGoogleClient
         var redirectUri = _googleOAuthData.RedirectUri;
         var grantType = _googleOAuthData.GrantType;
 
-        var request = new HttpRequestMessage(HttpMethod.Post, _googleOAuthData.GoogleTokenUrl);
+        var request = new HttpRequestMessage(HttpMethod.Post, _googleOAuthData.TokenUrl);
 
         var content = new FormUrlEncodedContent(new Dictionary<string, string>
         {
@@ -82,7 +83,7 @@ public class GoogleClient : IGoogleClient
         var clientSecret = _googleOAuthData.ClientSecret;
         var grantType = GoogleGrantType.RefreshToken.Value(); // Using the correct grant type for refresh token
 
-        var request = new HttpRequestMessage(HttpMethod.Post, _googleOAuthData.GoogleTokenUrl);
+        var request = new HttpRequestMessage(HttpMethod.Post, _googleOAuthData.TokenUrl);
 
         var content = new FormUrlEncodedContent(new Dictionary<string, string>
         {
@@ -108,7 +109,7 @@ public class GoogleClient : IGoogleClient
     public Task<string> GetLoginUrl()
     {
         var stringBuilder = new StringBuilder();
-        stringBuilder.Append($"{_googleOAuthData.GoogleUrl}");
+        stringBuilder.Append($"{_googleOAuthData.LoginUrl}");
         stringBuilder.Append($"response_type={_googleOAuthData.ResponseType.Value()}&");
         stringBuilder.Append($"client_id={_googleOAuthData.ClientId}&");
         stringBuilder.Append($"redirect_uri={_googleOAuthData.RedirectUri}&");
