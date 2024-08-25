@@ -20,6 +20,6 @@ namespace OAuth2.Google.Interfaces
         /// </summary>
         /// <param name="refreshToken">The refresh token issued by Google's OAuth 2.0 authorization server.</param>
         /// <returns>A <see cref="Task"/> representing the asynchronous operation, with a <see cref="GoogleOAuthLoginResponse"/> containing the new login response data, or <c>null</c> if the request fails.</returns>
-        Task<GoogleOAuthLoginResponse?> RefreshTokenAsync(string refreshToken);
+        new Task<GoogleOAuthLoginResponse?> RefreshTokenAsync(string refreshToken);
     }
 }
