@@ -53,7 +53,7 @@ public class MetaOAuthData
     /// <remarks>
     /// Check the Meta API documentation for a list of available scopes and further information. https://developers.facebook.com/docs/permissions
     /// </remarks>
-    public required IEnumerable<MetaPermissions> Permissions { get; set; }
+    public required IEnumerable<MetaFields> Permissions { get; set; }
 
     /// <summary>
     /// A unique state parameter to maintain state between the request and callback.
