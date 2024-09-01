@@ -29,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OAuth2\BurakKontas.OAuth2.csproj" />
+    <ProjectReference Include="..\OAuth2\BurakKontas.OAuth2.Google.csproj" />
   </ItemGroup>
 
 </Project>

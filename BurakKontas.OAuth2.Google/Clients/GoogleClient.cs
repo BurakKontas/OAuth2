@@ -6,7 +6,6 @@ using BurakKontas.OAuth2.Google.Enums.Extensions;
 using BurakKontas.OAuth2.Google.Interfaces;
 using BurakKontas.OAuth2.Google.Validators;
 using FluentValidation;
-using OAuth2.Common.Interfaces;
 
 namespace BurakKontas.OAuth2.Google.Clients;
 
