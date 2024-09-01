@@ -103,7 +103,7 @@ This project is licensed under the MIT License.
 - Implemented
   - Google OAuth2 Implementation
 - Roadmap
-  - Facebook OAuth2 Implementation
+  - Meta OAuth2 Implementation
   - Apple OAuth2 Implementation
   - X OAuth2 Implementation
   - Github OAuth2 Implementation

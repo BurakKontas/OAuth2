@@ -1,4 +1,4 @@
-﻿namespace OAuth2.Google.Enums
+﻿namespace BurakKontas.OAuth2.Google.Enums
 {
     /// <summary>
     /// Specifies the prompt behavior for Google's OAuth2 authorization.

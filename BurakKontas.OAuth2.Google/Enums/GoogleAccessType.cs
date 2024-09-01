@@ -1,4 +1,4 @@
-﻿namespace OAuth2.Google.Enums
+﻿namespace BurakKontas.OAuth2.Google.Enums
 {
     /// <summary>
     /// Specifies the type of access your application needs when interacting with Google's OAuth2 API.

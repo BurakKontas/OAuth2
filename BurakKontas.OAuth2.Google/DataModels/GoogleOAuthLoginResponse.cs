@@ -1,11 +1,12 @@
 ﻿using System.Text.Json.Serialization;
+using BurakKontas.OAuth2.Common.Interfaces;
 
-namespace OAuth2.Google.DataModels
+namespace BurakKontas.OAuth2.Google.DataModels
 {
     /// <summary>
     /// Represents the response received from Google OAuth 2.0 authentication service upon successful login.
     /// </summary>
-    public class GoogleOAuthLoginResponse
+    public class GoogleOAuthLoginResponse : ILoginResponse
     {
         /// <summary>
         /// The ID token issued by Google. This token contains information about the authenticated user.

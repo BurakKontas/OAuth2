@@ -1,6 +1,6 @@
-﻿using OAuth2.Google.Enums;
+﻿using BurakKontas.OAuth2.Google.Enums;
 
-namespace OAuth2.Google.DataModels
+namespace BurakKontas.OAuth2.Google.DataModels
 {
     /// <summary>
     /// Represents the configuration data required for Google OAuth 2.0 authorization.
@@ -17,7 +17,7 @@ namespace OAuth2.Google.DataModels
         /// This URL is used to start the OAuth 2.0 authorization process with Google.
         /// Ensure that any custom URL you provide is correctly formatted for Google OAuth 2.0.
         /// </remarks>
-        public Uri GoogleUrl { get; set; } = new("https://accounts.google.com/o/oauth2/v2/auth?");
+        public Uri LoginUrl { get; set; } = new("https://accounts.google.com/o/oauth2/v2/auth?");
 
         /// <summary>
         /// The URL endpoint used to exchange an authorization code or refresh token for an access token.
@@ -31,7 +31,7 @@ namespace OAuth2.Google.DataModels
         /// 
         /// Ensure that any custom URL you provide is correctly formatted for Google OAuth 2.0 token exchanges.
         /// </remarks>
-        public Uri GoogleTokenUrl { get; set; } = new("https://oauth2.googleapis.com/token");
+        public Uri TokenUrl { get; set; } = new("https://oauth2.googleapis.com/token");
 
         /// <summary>
         /// The client ID obtained from Google API Console.
@@ -45,8 +45,10 @@ namespace OAuth2.Google.DataModels
 
         /// <summary>
         /// The URI to which Google will redirect after successful authorization.
-        /// Must be a valid URI.
         /// </summary>
+        /// <remarks>
+        /// Must be a valid URI.
+        /// </remarks>
         public required Uri RedirectUri { get; set; }
 
         /// <summary>

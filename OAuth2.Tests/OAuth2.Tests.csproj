@@ -29,7 +29,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OAuth2\OAuth2.csproj" />
+    <ProjectReference Include="..\BurakKontas.OAuth2.Common\BurakKontas.OAuth2.Common.csproj" />
+    <ProjectReference Include="..\BurakKontas.OAuth2.Google\BurakKontas.OAuth2.Google.csproj" />
+    <ProjectReference Include="..\BurakKontas.OAuth2.Meta\BurakKontas.OAuth2.Meta.csproj" />
+    <ProjectReference Include="..\OAuth2\BurakKontas.OAuth2.Google.csproj" />
   </ItemGroup>
 
 </Project>

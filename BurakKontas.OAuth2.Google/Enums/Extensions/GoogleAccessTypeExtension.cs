@@ -1,4 +1,6 @@
-﻿namespace OAuth2.Google.Enums.Extensions
+﻿using BurakKontas.OAuth2.Google.Enums;
+
+namespace BurakKontas.OAuth2.Google.Enums.Extensions
 {
     /// <summary>
     /// Provides extension methods for the <see cref="GoogleAccessType"/> enum.

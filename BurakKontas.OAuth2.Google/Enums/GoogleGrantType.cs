@@ -1,4 +1,4 @@
-﻿namespace OAuth2.Google.Enums
+﻿namespace BurakKontas.OAuth2.Google.Enums
 {
     /// <summary>
     /// Specifies the different OAuth 2.0 grant types.

@@ -1,4 +1,4 @@
-﻿namespace OAuth2.Google.Enums
+﻿namespace BurakKontas.OAuth2.Google.Enums
 {
     /// <summary>
     /// Specifies the types of responses that can be requested from Google's OAuth2 authorization server.
