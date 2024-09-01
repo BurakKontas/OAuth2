@@ -1,6 +1,6 @@
-﻿using OAuth2.Meta.Enums;
+﻿using BurakKontas.OAuth2.Meta.Enums;
 
-namespace OAuth2.Meta.DataModels;
+namespace BurakKontas.OAuth2.Meta.DataModels;
 
 public class MetaOAuthData
 {

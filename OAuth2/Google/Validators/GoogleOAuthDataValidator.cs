@@ -1,7 +1,7 @@
-﻿using FluentValidation;
-using OAuth2.Google.DataModels;
+﻿using BurakKontas.OAuth2.Google.DataModels;
+using FluentValidation;
 
-namespace OAuth2.Google.Validators;
+namespace BurakKontas.OAuth2.Google.Validators;
 
 /// <summary>
 /// Validator class for <see cref="GoogleOAuthData"/> to ensure the validity of the OAuth 2.0 configuration data.

@@ -1,10 +1,10 @@
 ﻿using FluentAssertions;
 using Moq;
 using Moq.Protected;
-using OAuth2.Google.DataModels;
-using OAuth2.Google.Enums;
 using OAuth2.Google.Clients;
 using Microsoft.Extensions.Configuration;
+using BurakKontas.OAuth2.Google.Enums;
+using BurakKontas.OAuth2.Google.DataModels;
 
 namespace OAuth2.Tests.IntegrationTests;
 

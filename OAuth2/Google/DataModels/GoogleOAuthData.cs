@@ -1,6 +1,6 @@
-﻿using OAuth2.Google.Enums;
+﻿using BurakKontas.OAuth2.Google.Enums;
 
-namespace OAuth2.Google.DataModels
+namespace BurakKontas.OAuth2.Google.DataModels
 {
     /// <summary>
     /// Represents the configuration data required for Google OAuth 2.0 authorization.

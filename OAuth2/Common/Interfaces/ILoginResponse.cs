@@ -1,4 +1,4 @@
-﻿namespace OAuth2.Common.Interfaces;
+﻿namespace BurakKontas.OAuth2.Common.Interfaces;
 
 public interface ILoginResponse
 {

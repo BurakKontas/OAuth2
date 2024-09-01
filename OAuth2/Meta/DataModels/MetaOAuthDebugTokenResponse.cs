@@ -1,11 +1,11 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace OAuth2.Meta.DataModels;
+namespace BurakKontas.OAuth2.Meta.DataModels;
 
 public class MetaOAuthDebugTokenResponse
 {
     [JsonPropertyName("data")]
-    public required MetaOAuthDebugTokenData Data { get; set; }   
+    public required MetaOAuthDebugTokenData Data { get; set; }
 }
 
 public class MetaOAuthDebugTokenData

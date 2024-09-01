@@ -1,4 +1,4 @@
-﻿namespace OAuth2.Google.Enums.Extensions
+﻿namespace BurakKontas.OAuth2.Google.Enums.Extensions
 {
     public static class GooglePromptExtensions
     {

@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace OAuth2.Meta.DataModels;
+namespace BurakKontas.OAuth2.Meta.DataModels;
 
 public class MetaOAuthGetUserDataResponse
 {

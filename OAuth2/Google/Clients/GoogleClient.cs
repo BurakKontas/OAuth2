@@ -1,14 +1,14 @@
 ﻿using System.Text;
 using System.Text.Json;
+using BurakKontas.OAuth2.Google.DataModels;
+using BurakKontas.OAuth2.Google.Enums;
+using BurakKontas.OAuth2.Google.Enums.Extensions;
+using BurakKontas.OAuth2.Google.Interfaces;
+using BurakKontas.OAuth2.Google.Validators;
 using FluentValidation;
 using OAuth2.Common.Interfaces;
-using OAuth2.Google.DataModels;
-using OAuth2.Google.Enums;
-using OAuth2.Google.Enums.Extensions;
-using OAuth2.Google.Interfaces;
-using OAuth2.Google.Validators;
 
-namespace OAuth2.Google.Clients;
+namespace BurakKontas.OAuth2.Google.Clients;
 
 /// <summary>
 /// Implementation of the <see cref="IGoogleClient"/> interface for interacting with Google OAuth 2.0 services.

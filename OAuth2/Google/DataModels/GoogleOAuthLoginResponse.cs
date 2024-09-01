@@ -1,7 +1,7 @@
 ﻿using System.Text.Json.Serialization;
-using OAuth2.Common.Interfaces;
+using BurakKontas.OAuth2.Common.Interfaces;
 
-namespace OAuth2.Google.DataModels
+namespace BurakKontas.OAuth2.Google.DataModels
 {
     /// <summary>
     /// Represents the response received from Google OAuth 2.0 authentication service upon successful login.

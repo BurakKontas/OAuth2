@@ -1,12 +1,12 @@
-﻿using OAuth2.Common.Interfaces;
-using OAuth2.Google.DataModels;
+﻿using BurakKontas.OAuth2.Common.Interfaces;
+using BurakKontas.OAuth2.Google.DataModels;
 
-namespace OAuth2.Google.Interfaces
+namespace BurakKontas.OAuth2.Google.Interfaces
 {
     /// <summary>
     /// Defines the methods for interacting with Google OAuth 2.0 authentication services.
     /// </summary>
-    public interface IGoogleClient: IClient<GoogleOAuthLoginResponse>
+    public interface IGoogleClient : IClient<GoogleOAuthLoginResponse>
     {
         /// <summary>
         /// Retrieves an access token and other OAuth login response data using an authorization code.

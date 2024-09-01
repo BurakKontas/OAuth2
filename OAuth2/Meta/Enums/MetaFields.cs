@@ -1,5 +1,5 @@
 ﻿// ReSharper disable InvalidXmlDocComment
-namespace OAuth2.Meta.Enums;
+namespace BurakKontas.OAuth2.Meta.Enums;
 
 public enum MetaFields
 {
